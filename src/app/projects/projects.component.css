@@ -1,26 +1,23 @@
-.swiper {
-  width: 100%;
-}
-
+/* Make sure Swiper wrapper displays horizontally */
 .swiper-wrapper {
-  display: flex; /* ensure horizontal alignment */
+  display: flex;
 }
 
 .swiper-slide {
-  display: flex;
-  flex-direction: column; /* captions below image */
-  align-items: center;
-  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .swiper-slide img {
+  display: block;
   width: 100%;
-  height: auto; /* auto height based on image */
-  object-fit: contain;
-  display: block; /* removes inline spacing issues */
+  height: 100%;
+  object-fit: cover; /* cover full slide */
 }
 
-.swiper-slide p {
-  margin-top: 0.5rem; /* spacing below image */
-  text-align: center;
+.swiper-pagination-bullet {
+  background: white; /* make pagination visible */
+  opacity: 0.7;
 }

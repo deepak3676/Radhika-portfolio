@@ -26,81 +26,42 @@
             problem-solving and real-world tech projects.
             <br />
           </p>
-  <!-- Skills -->
-  <div class="flex flex-wrap gap-2 mt-4">
-    <span
-      class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-800 text-gray-800">Design
-      Thinking</span>
-    <span
-      class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-800 text-gray-800">Python</span>
-    <span
-      class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-800 text-gray-800">Arduino
-      Studio</span>
-    <span
-      class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-800 text-gray-800">ESP32</span>
-    <span
-      class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-800 text-gray-800">Aeromodelling</span>
-  </div>
-  </div>
-  </div>
-  </div>
+          <!-- Skills -->
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span
+              class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-800 text-gray-800">Design
+              Thinking</span>
+            <span
+              class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-800 text-gray-800">Python</span>
+            <span
+              class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-800 text-gray-800">Arduino
+              Studio</span>
+            <span
+              class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-800 text-gray-800">ESP32</span>
+            <span
+              class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-800 text-gray-800">Aeromodelling</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </a>
 
   <!-- ===================== 2️⃣ Carousel Section ===================== -->
- <div class="fade-in">
-  <h3 class="text-center text-3xl font-bold text-gray-800 mb-6 mt-8">
-    Skills in Action
-  </h3>
-
-  <!-- Swiper Carousel -->
-  <div class="swiper mySwiper w-full h-screen">
-    <div class="swiper-wrapper h-full">
-
-      <!-- Slide 1 -->
-      <div class="swiper-slide relative w-full h-full">
-        <img src="/assets/img/Snap circuit.jpeg" alt="Snap Circuit" />
-        <p
-          class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-2xl font-semibold text-white bg-black/40 px-4 py-2 rounded">
-          Snap Circuit
-        </p>
+  
+    <div class="swiper mySwiper w-full h-full">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide w-full h-full flex items-center justify-center" *ngFor="let slide of slides">
+          <img [src]="slide.src" [alt]="slide.caption" class="w-full h-full object-cover" />
+          <p class="absolute bottom-10 text-white text-3xl bg-black/40 px-4 py-2 rounded">
+            {{ slide.caption }}
+          </p>
+        </div>
       </div>
 
-      <!-- Slide 2 -->
-      <div class="swiper-slide relative w-full h-full">
-        <img src="/assets/img/Arduino.jpeg" alt="Arduino"
-         />
-        <p
-          class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-2xl font-semibold text-white bg-black/40 px-4 py-2 rounded">
-          Arduino & ESP32
-        </p>
-      </div>
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>\\
 
-      <!-- Slide 3 -->
-      <div class="swiper-slide relative w-full h-full">
-        <img src="/assets/img/Design thinking.jpeg" alt="Design Thinking"
-          />
-        <p
-          class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-2xl font-semibold text-white bg-black/40 px-4 py-2 rounded">
-          Design Thinking
-        </p>
-      </div>
-
-      <!-- Slide 4 -->
-      <div class="swiper-slide relative w-full h-full">
-        <img src="/assets/img/Aeromodelling.jpeg" alt="Aeromodelling"
-        />
-        <p
-          class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-2xl font-semibold text-white bg-black/40 px-4 py-2 rounded">
-          Aeromodelling
-        </p>
-      </div>
-
-    </div>
-
-    <!-- Pagination -->
-    <div class="swiper-pagination mt-6"></div>
-  </div>
-</div>
 
 
 
